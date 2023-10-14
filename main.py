@@ -23,7 +23,6 @@ while True:
         try:
             clean_bin.cleaning_bin()
             sg.popup('Your bin has been cleaned')
-            break
         except Exception as e:
             sg.popup(f"An error occurred: {e}")
     elif event == sg.WINDOW_CLOSED:
