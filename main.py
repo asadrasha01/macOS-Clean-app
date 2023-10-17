@@ -1,13 +1,11 @@
 import PySimpleGUI as sg
 import quit_app
 import clean_bin
-
 sg.theme('Dark Grey 13')   
 
 layout = [  [sg.Text('Welcome to MacOS Cleaner')],
             [sg.Text('Choose:'), ],
             [sg.Button('Quit all app'), sg.Button('Clean bin')] ]
-
 window = sg.Window("MacOS Clean", layout)
 
 while True:
@@ -26,6 +24,6 @@ while True:
         except Exception as e:
             sg.popup(f"An error occurred: {e}")
     elif event == sg.WINDOW_CLOSED:
-        break
-
+        break  
+    
 window.close()
