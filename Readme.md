@@ -2,7 +2,7 @@
 
 ``` Bash
 pyinstaller --name 'macClean' \
-            --icon 'logo.ico' \
+            --icon 'icon48.icns' \
             --windowed \
             main.py
 ```
